@@ -1,0 +1,49 @@
+
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/5342656760.js" crossorigin="anonymous"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    </head>
+    
+        <body>
+                <center>
+                <h1 >Employee Details</h1>
+                <div class = "container">
+                    <input type="hidden" id ="id">
+                    <input type="text"  class="form-control" placeholder="Enter Name" id = "ipname" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'><br>
+                    <input type="text"  class="form-control" placeholder="Enter job" id = "ipjob" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'><br>
+                    <input type="number"  class="form-control" placeholder="Enter salary" id = "ipsalary"><br>
+                </div>
+
+                <row>
+                    <button class="btn btn-warning" type = "submit" id = "button">Add <i class="fa-solid fa-plus"></i></button>
+                    <button class="btn btn-success" type = "search" id = "buttons">search</button>
+                </row>
+    
+                <div class="container">
+                    
+                    <table  id = "tab" class="table table-dark table-striped-columns" border=2>
+                       <thead class = "b">
+                           <tr class="table-dark">
+                               <th data-column = "Name" data-order="asc">Name <i class="fa-solid fa-sort"></i></th> 
+                               <th data-column="job" data-order="asc">Job <i class="fa-solid fa-sort"></i></th>
+                               <th data-column= "salary" data-order="asc">Salary <i class="fa-solid fa-sort"></i></th>
+                               <th>Action</th>
+                           </tr>
+                       </thead> 
+                    <tbody id = "tablebody">
+                    </tbody>
+                    </table>
+                </div>
+            </center>
+
+        </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src = "./app.js"></script>
+    
+    </html>
